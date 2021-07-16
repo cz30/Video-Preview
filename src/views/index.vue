@@ -74,12 +74,12 @@
 
         </div>
 <!--        vant插件区-->
-        <van-popup v-model="show">
+        <van-popup v-model="show" closeable round>
             <div class="popup">
-                <h6>该视频不提供试看</h6>
-                <span>您可咨询“春华教育”继续学习</span>
-                <span>联系电话：（校区电话）</span>
-                <van-button type="info">信息按钮</van-button>
+                <span>该视频不提供试看</span><br>
+                <span>您可咨询“春华教育”继续学习</span><br>
+                <span>联系电话：（校区电话）</span><br>
+                <van-button type="info">立即联系</van-button>
             </div>
         </van-popup>
     </div>
@@ -456,5 +456,29 @@
         background: #FFFFFF;
         opacity: 1;
         border-radius: 10px;
+        text-align: center;
+        >span:nth-child(1){
+            margin-top: 40px;
+            width: 144px;
+            height: 25px;
+            font-size: 18px;
+            font-family: PingFang SC;
+            font-weight: bold;
+            line-height: 25px;
+            color: #333333;
+            opacity: 1;
+
+        }
+
+        >span{
+            width: 209px;
+            height: 22px;
+            font-size: 16px;
+            font-family: PingFang SC;
+            font-weight: 400;
+            line-height: 28px;
+            color: #484848;
+            opacity: 1;
+        }
     }
 </style>
